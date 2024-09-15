@@ -6,16 +6,19 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'}],
+      link: [
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'},
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'}
+      ],
       title: 'App local'
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
+    //pageTransition: { name: 'page', mode: 'out-in' }
   },
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/_colors.scss" as *;'
+          additionalData: '@use "~/assets/_variables.scss" as *; @use "~/assets/_colors.scss" as *;'
         }
       }
     }
@@ -27,5 +30,16 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+  components: [
+    { 
+      path: '~/components',
+      pathPrefix: false,
+    }
+  ],
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  }
 })

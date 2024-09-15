@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <AppHeader />
+  <AppHeader />
+
+  <div class="flex items-start justify-start">
     <slot />
-    <AppFooter />
   </div>
+
+  <AppFooter />
 </template>

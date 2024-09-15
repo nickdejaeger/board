@@ -18,12 +18,36 @@ definePageMeta({
 // When accessing /posts/1, route.params.id will be 1
 const id = route.params.id
 const q = route.query.example
+
+
+const { data: movies } = await useFetch('https://dummyapi.online/api/movies')
 </script>
 
 <template>
-  <div>
-    <PageHeader>
-      <h1>User with ID <span>{{ id }}</span> and the query is set to <span>{{ q }}</span></h1>
-    </PageHeader>
-  </div>
+  <PageHeader>
+    <h1>User</h1>
+  </PageHeader>
+
+  <PageContent>
+    <div>ID: <span>{{ id }}</span></div>
+    <div>Query: <span>{{ q }}</span></div>
+    <div v-for="(movie, index) in movies" :key="movie.id">
+      <article v-if="index == 0" class="flex">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg" />
+        <div>
+          <div>{{  }}</div>
+          <h2>{{ movie['movie'] }}</h2>
+          <div>{{ movie['rating'] }}</div>
+        </div>
+      </article>
+    </div>
+  </PageContent>
 </template>
+
+<style scoped>
+article {
+  img {
+    max-width: 100px;
+  }
+}
+</style>

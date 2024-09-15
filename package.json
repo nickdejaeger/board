@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vesp/nuxt-fontawesome": "^1.1.0",
     "animate.css": "^4.1.1",
     "nuxt": "^3.13.0",
     "vue": "latest",

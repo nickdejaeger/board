@@ -1,0 +1,36 @@
+:root {
+  --color-action: #945E00;
+  --color-primary: #00B3FD;
+  --color-primary-shadow: #007399;
+  --color-placeholder: rgba(0, 0, 0, .5);
+  --color-text: #000;
+  --color-bg: #343434;
+  --color-bg-white: #FFF;
+  --color-bg-black: #000;
+  --color-bg-cloud: rgba(140, 140, 140, 0.1);
+  --color-bg-darkcloud: rgba(0, 0, 0, 0.1);
+  --color-bg--selected: #FFF;
+
+  --component-space: .5rem;
+
+  --component-action-btn-color: #FFF;
+
+  --component-field-input-bg-color: rgba(0, 0, 0, .01);
+  --component-field-input-shadow: inset 0.625rem 0 0.625rem -0.625rem rgba(0, 0, 0, 0.35);
+  --component-field-input-hover: rgba(0, 0, 0, .02);
+
+  --component-selector-expanded-bg-color: #D7D7D7;
+  --component-selector-selected-bg: #FFF;
+  --component-selector-selected-shadow: 0 0.25rem 0.5rem -0.25rem rgba(0, 0, 0, 0.2);
+  --component-selector-selected-hover-shadow: 0 0.125rem 0.25rem -0.25rem rgba(0, 0, 0, 0.5);
+
+  --component-card-bg-editable: linear-gradient(to bottom, #E9E9E9 0%, rgba(255, 255, 255, 0) 100%);
+
+  --component-divider-bg-color: #000;
+
+  --radius-soft: .5rem;
+  --radius-normal: .75rem;
+  --radius-hard: 1.75rem;
+  
+  --theme-settings-gradient: repeating-linear-gradient(-230deg, #FFF, #FFF 20px, #F5F6F8 20px, #F5F6F8 40px);
+}

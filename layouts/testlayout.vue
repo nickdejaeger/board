@@ -3,22 +3,20 @@ const title = ref('Test 404')
 </script>
 
 <template>
-  <div>
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="title" />
-      <Style type="text/css" children="body { background-color: black; color: #FFF; }" ></Style>
-    </Head>
+  <Head>
+    <Title>{{ title }}</Title>
+    <Meta name="description" :content="title" />
+    <Style type="text/css" children="body { background-color: black; color: #FFF; }" ></Style>
+  </Head>
 
-    <AppHeader />
+  <AppHeader />
 
-    <main class="p-4">
-      <header class="test-title">
-        <slot name="header">Default header content</slot>
-      </header>
-      <slot />
-    </main>    
-  </div>
+  <main class="p-4">
+    <header class="test-title">
+      <slot name="header">Default header content</slot>
+    </header>
+    <slot />
+  </main>    
 </template>
 
 <style>

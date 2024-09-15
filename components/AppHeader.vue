@@ -2,6 +2,7 @@
   <header class="navbar">
     <div><NuxtLink to="/">Company</NuxtLink></div>
     <nav class="flex gap-3">
+      <NuxtLink to="/components">Components</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
       <NuxtLink to="/test">Test</NuxtLink>
       <NuxtLink to="/posts/2?example=true">Post 2</NuxtLink>

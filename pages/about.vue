@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <h1>Welcome to the about page</h1>
+  <PageHeader>
+    <h1>About</h1>
+  </PageHeader>
 
+  <PageContent>
     <Button>The about button</Button>
-  </div>
+  </PageContent>
 </template>

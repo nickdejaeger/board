@@ -1,9 +1,10 @@
 <template>
-  <PageHeader>
-    <h1>About</h1>
-  </PageHeader>
-
   <PageContent>
-    <Button>The about button</Button>
+    <PageHeader>About</PageHeader>
+    <div>About</div>
   </PageContent>
 </template>
+
+<script>
+
+</script>

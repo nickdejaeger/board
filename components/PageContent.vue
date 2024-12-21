@@ -1,11 +1,15 @@
 <template>
-  <main>
-    <slot />
-  </main>
+    <section>
+        <slot />
+    </section>
 </template>
 
 <style scoped lang="scss">
-  main {
-    padding: 2rem;
-  }
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 4rem 0;
+}
 </style>

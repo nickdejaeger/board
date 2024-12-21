@@ -1,5 +1,53 @@
+body {
+  font-family: "Source Sans Pro", "TF-Regular", Arial, sans-serif;
+  font-kerning: normal;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-feature-settings: "kern" 1, "liga" 0;
+  font-feature-settings: "kern" 1, "liga" 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.error-404 {
+    background-color: black;
+    color: #FFF;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+  border: 0;
+  outline: 0;
+  background: none;
+  text-decoration: none;
+  box-shadow: none;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
 h1 {
   font-size: 2rem;
-  line-height: 1.2;
-  color: $color-primary;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
 }

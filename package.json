@@ -10,9 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/content": "^2.13.4",
+    "@nuxtjs/supabase": "^1.4.5",
+    "@pinia/nuxt": "^0.5.4",
+    "@proicons/vue": "^4.11.2",
+    "@supabase/supabase-js": "^2.47.10",
     "@vesp/nuxt-fontawesome": "^1.1.0",
     "animate.css": "^4.1.1",
     "nuxt": "^3.13.0",
+    "pinia": "^2.2.2",
     "vue": "latest",
     "vue-router": "latest"
   },

@@ -1,14 +1,40 @@
-<script>
-  // Use a static import for server-side compatibility
-  import '~/assets/css/first.css'
+<script lang="ts" setup>
+definePageMeta({
+    middleware: 'auth'
+})
+
+function sleep(delay: number) {
+    return new Promise((resolve) => setTimeout(resolve, delay));
+}
+
+//const response = await $fetch('https://jsonplaceholder.typicode.com/posts')
+const response = await $fetch('/api/hello')
+console.log(response)
+
+const { sayHello } = useUtils()
+sayHello()
+
+const { $sayHelloPlug } = useNuxtApp()
+$sayHelloPlug('Nick')
+
+const counter = useCounter()
 </script>
 
 <template>
-  <PageHeader>
-    <h1>Welcome!</h1>
-  </PageHeader>
+
   <PageContent>
-    <Button><img src="/img/nuxt.png" alt="logo" /> The homepage button</Button>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repudiandae dolorem iure eum maiores laudantium optio laborum ducimus quaerat ipsum vitae dolorum nihil itaque doloremque, nesciunt quasi culpa ab corporis.</p>
+
+    <Button>Hello index.vue</Button>
+
+    <div>Index Page</div>
+
+    <ContentDoc />
+
+    <div>
+        Counter: {{ counter }}
+        <button @click="counter++">plus</button>
+    </div>
+    
   </PageContent>
+
 </template>

@@ -1,0 +1,1 @@
+> Hi *hello world* from **'content'** module

@@ -1,9 +1,11 @@
 <template>
-  <AppHeader />
-  <main>
-    <slot />
-  </main>
-  <AppFooter />
+    <AppHeader />
+
+    <main>
+        <slot />
+    </main>
+    
+    <AppFooter />
 </template>
 
 <style scoped lang="scss">

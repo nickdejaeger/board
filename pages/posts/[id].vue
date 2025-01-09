@@ -1,28 +1,25 @@
 <script setup lang="ts">
-useHead({
-  title: 'Profile',
-  meta: [
-    { name: 'description', content: 'Profile dashboard.' }
-  ]
-})
-
 const route = useRoute()
-definePageMeta({
-  validate: async (route) => {
-    // Check if the id is made up of digits
-    return typeof route.params.id === 'string' && /^\d+$/.test(route.params.id)
-  }
-})
-// When accessing /posts/1, route.params.id will be 1
 const id = route.params.id
 const q = route.query.example
 
-
-const { data: movies, pending, execute, status } = await useFetch('https://dummyapi.online/api/movies', {
-  lazy: true,
-  server: false
+useHead({
+    title: 'Profile',
+    meta: [
+        { name: 'description', content: 'Profile dashboard.' }
+    ]
 })
 
+definePageMeta({
+    validate: async (route) => {
+        return typeof route.params.id === 'string' && /^\d+$/.test(route.params.id)
+    }
+})
+
+const { data: movies, pending, execute, status } = await useFetch('https://dummyapi.online/api/movies', {
+    lazy: true,
+    server: false
+})
 </script>
 
 <template>

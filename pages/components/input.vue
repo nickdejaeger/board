@@ -3,10 +3,6 @@ useHead({
     title: 'Input',
 })
 
-definePageMeta({
-    layout: 'component'
-})
-
 defineProps({
     title: {
         type: String,

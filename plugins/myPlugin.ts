@@ -1,9 +1,9 @@
 export default defineNuxtPlugin(nuxtApp => {
-    console.log('Hello from myPlugin: ', nuxtApp)
+    console.log('plugins/myPlugin.ts: ', nuxtApp)
 
     return {
         provide: {
-            sayHelloPlug: (msg: string) => console.log(`Hello ${msg}`)
+            sayHelloPlug: (msg: string) => console.log(`plugins/myPlugin.ts: Hello ${msg}`)
         },
     }
 })

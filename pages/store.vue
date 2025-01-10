@@ -46,26 +46,22 @@ const courses = ref([
 
 <template>
 
-  <PageContent>
-
     <PageHeader>Pinia Store</PageHeader>
 
     <div>
-      <div>
-        <input v-model="inputVal" placeholder="Add streaming service" />
-        <Button @click="addValueToFilterList(inputVal)" class="button--primary">Add value</Button>
-      </div>
-      <div>{{ filtersList }}</div>
+        <div>
+            <input v-model="inputVal" placeholder="Add streaming service" />
+            <Button @click="addValueToFilterList(inputVal)" class="button--primary">Add value</Button>
+        </div>
+        <div>{{ filtersList }}</div>
     </div>
 
     <div class="flex flex-col items-start gap-2 mt-12">
-      <div class="flex items-center justify-between w-full mb-2">Products in cart: {{ cartList }} <Button @click="emptyTheCart" class="button--secondary">Empty cart</Button></div>
-      <div v-for="(item, index) in courses" :key="index" class="flex items-center gap-2">
+        <div class="flex items-center justify-between w-full mb-2">Products in cart: {{ cartList }} <Button @click="emptyTheCart" class="button--secondary">Empty cart</Button></div>
+        <div v-for="(item, index) in courses" :key="index" class="flex items-center gap-2">
         <span>{{ item.title }} - {{ item.price }}</span>
         <Button @click="addValueToCartList(1)" class="button--primary">Add to cart</Button> 
-      </div>
+        </div>
     </div>
-
-  </PageContent>
 
 </template>

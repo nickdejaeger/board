@@ -4,5 +4,5 @@
 </script>
 
 <template>
-    <div>{{ par }}</div>
+    <PageHeader>{{ par }}</PageHeader>
 </template>

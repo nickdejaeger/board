@@ -4,10 +4,6 @@ import { ProIcon } from '@proicons/vue'
 useHead({
     title: 'Dropdown Menu',
 })
-
-definePageMeta({
-    layout: 'component'
-})
 </script>
 
 <template>

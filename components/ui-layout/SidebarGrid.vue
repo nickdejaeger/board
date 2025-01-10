@@ -7,7 +7,7 @@
 <style scoped lang="scss">
 div {
     display: grid;
-    grid-template-columns: 240px minmax(0, 1fr);
-    gap: 4rem;
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: 2rem;
 }
 </style>

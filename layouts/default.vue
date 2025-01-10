@@ -1,20 +1,23 @@
 <template>
     <AppHeader />
-
-    <main>
-        <slot />
-    </main>
-    
+    <Container>
+        <SidebarGrid>
+            <aside>
+                <AppMenu />
+            </aside>
+            <main>
+                <slot />
+            </main>
+        </SidebarGrid>
+    </Container>
     <AppFooter />
 </template>
 
 <style scoped lang="scss">
+aside {
+    padding: 2rem 1rem 1rem 0;
+}
 main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 2rem 0 0 0;
 }
 </style>

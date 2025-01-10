@@ -18,24 +18,19 @@
 </script>
 
 <template>
-    <div>
-        <div class="p-12">
 
-            <h1>Test Page</h1>
+    <PageHeader>Test Page</PageHeader>
 
+    <ContentDoc />
 
-            <ContentDoc />
+    <div>{{ me }}</div>
 
-            <div>{{ me }}</div>
-
-            <div v-if="pending">Loading...</div>
-            <div v-else>
-                <div v-for="post in posts" key="post.id" class="p-2 px-4 mb-2 border">
-                    <div><h3>{{ post.title }}</h3></div>
-                    <div>{{ post.body }}</div>
-                </div>
-            </div>
-            
+    <div v-if="pending">Loading...</div>
+    <div v-else>
+        <div v-for="post in posts" key="post.id" class="p-2 px-4 mb-2 border">
+            <div><h3>{{ post.title }}</h3></div>
+            <div>{{ post.body }}</div>
         </div>
     </div>
+            
 </template>

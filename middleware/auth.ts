@@ -1,5 +1,6 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-    console.log('Hello fron middleware.', to, from)
+    console.log('middleware/auth.ts: ', to, from)
+    
 
     /*
     const isLoggedIn = false

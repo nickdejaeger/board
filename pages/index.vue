@@ -3,34 +3,25 @@ definePageMeta({
     middleware: 'auth'
 })
 
-function sleep(delay: number) {
-    return new Promise((resolve) => setTimeout(resolve, delay));
-}
 
 //const response = await $fetch('https://jsonplaceholder.typicode.com/posts')
 const response = await $fetch('/api/hello')
 console.log(response)
 
-const { sayHello } = useUtils()
-sayHello()
+
+const { sayHelloComposables } = useComposables()
+sayHelloComposables('Nick')
+const { sleepComp } = useComposables()
+sleepComp(3000)
+
 
 const { $sayHelloPlug } = useNuxtApp()
-$sayHelloPlug('Nick')
+$sayHelloPlug('Nick!!!')
 
 const counter = useCounter()
 </script>
 
 <template>
-
-  <PageContent>
-
-    <Container>
-        <div class="w-full py-24 px-12">
-            <input type="text" name="" id="" placeholder="Search..." class="w-full p-4 border border-gray-300 rounded-lg">
-        </div>
-    </Container>
-
-    <Container>
 
         <div class="flex">
             <div class="w-2/3">
@@ -61,26 +52,13 @@ const counter = useCounter()
             </div>
         </div>
 
-    </Container>
-
-    <Container>
         <div>
             Counter: {{ counter }}
             <Button @click="counter++">Add value</Button>
         </div>
-    </Container>
-
-    
-    
-  </PageContent>
 
 </template>
 
 <style scoped lang="scss">
-input {
-    border: 1px solid #DDD;
-    border-radius: 6rem;
-    padding: 1rem 3rem;
-    font-size: 2rem;
-}
+
 </style>

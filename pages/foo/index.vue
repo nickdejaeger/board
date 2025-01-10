@@ -1,3 +1,3 @@
 <template>
-    <div>foo page</div>
+    <PageHeader>Foo Page</PageHeader>
 </template>

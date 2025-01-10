@@ -3,10 +3,6 @@ useHead({
     title: 'Badge',
 })
 
-definePageMeta({
-    layout: 'component'
-})
-
 defineProps({
     title: {
         type: String,

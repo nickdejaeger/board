@@ -3,10 +3,6 @@ useHead({
     title: 'Button',
 })
 
-definePageMeta({
-    layout: 'component'
-})
-
 defineProps({
     title: {
         type: String,

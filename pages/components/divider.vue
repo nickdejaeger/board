@@ -3,10 +3,6 @@ useHead({
     title: 'Divider',
 })
 
-definePageMeta({
-    layout: 'component'
-})
-
 defineProps({
     title: {
         type: String,

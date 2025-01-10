@@ -1,12 +1,6 @@
 <script setup lang="ts">
-import type { Text } from 'vue';
-
 useHead({
     title: 'Text',
-})
-
-definePageMeta({
-    layout: 'component'
 })
 
 defineProps({

@@ -3,10 +3,6 @@ useHead({
     title: 'Accordion',
 })
 
-definePageMeta({
-    layout: 'component'
-})
-
 defineProps({
     title: {
         type: String,
@@ -47,8 +43,4 @@ const accordionData = ref([{
 </template>
 
 <style lang="scss">
-    div {
-        display: grid;
-
-    }
 </style>

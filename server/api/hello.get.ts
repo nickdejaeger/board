@@ -1,5 +1,5 @@
 export default defineEventHandler((event) => {
     return {
-        api: 'hello from api folder'
+        api: 'server/api/hello.get.ts',
     }
 })

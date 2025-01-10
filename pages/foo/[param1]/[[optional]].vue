@@ -5,5 +5,5 @@
 </script>
 
 <template>
-    <div>this path has: foo/{{ par1 }}/{{ par2 }}</div>
+    <PageHeader>foo/{{ par1 }}/{{ par2 }}</PageHeader>
 </template>

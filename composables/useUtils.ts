@@ -1,12 +1,12 @@
-export const useUtils = () => {
+export const useComposables = () => {
 
-    const sayHello = () => console.log('Hello from useUtils')
+    const sayHelloComposables = (name: string) => console.log(`composables/useUtils.ts: ${name}`)
 
-    const sleep = (delay: number) => new Promise((resolve) => setTimeout(resolve, delay))
+    const sleepComp = (delay: number) => new Promise((resolve) => setTimeout(resolve, delay))
 
     return { 
-        sayHello,
-        sleep
+        sayHelloComposables,
+        sleepComp
     }
 }
 

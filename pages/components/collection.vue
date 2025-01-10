@@ -5,10 +5,6 @@ useHead({
     title: 'Collection',
 })
 
-definePageMeta({
-    layout: 'component'
-})
-
 defineProps({
     title: {
         type: String,

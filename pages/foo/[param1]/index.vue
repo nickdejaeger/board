@@ -4,5 +4,5 @@
 </script>
 
 <template>
-    <div>this path has: foo/{{ par1 }}</div>
+    <PageHeader>foo/{{ par1 }}</PageHeader>
 </template>

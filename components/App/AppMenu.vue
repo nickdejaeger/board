@@ -25,6 +25,7 @@ const componentLinks = ref([
     { path: '/components/divider', name: 'Divider' },
     //{ path: '/components/dropdown', name: 'Dropdown' },
     //{ path: '/components/field', name: 'Field' },
+    { path: '/components/form', name: 'Froms' },
     //{ path: '/components/heading', name: 'Heading' },
     //{ path: '/components/icon', name: 'Icon' },
     { path: '/components/input', name: 'Input' },
@@ -107,7 +108,7 @@ nav {
             top: 0;
             left: 0;
             bottom: 0;
-            border-right: 2px solid #EEE;
+            border-right: 2px solid #d1d1d1;
         }
 
         &:focus-visible {

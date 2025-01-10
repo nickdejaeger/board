@@ -14,13 +14,17 @@
 
 input,
 textarea {
-  position: relative;
-  background-color: #FFF;
-  border-radius: .5rem;
-  padding: .5rem 1rem;
-  border: .025rem solid $color-border;
-  box-shadow: $component-shadow;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    position: relative;
+    background-color: #FFF;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    border: .025rem solid $color-border;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    border: 1px solid #f7f6f9;
+    background-color: #f7f6f9;
+    border-radius: .5rem;
+    padding: .5rem .75rem;
 
   &:focus-visible {
     border-color: $color-border-focus;

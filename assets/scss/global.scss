@@ -11,6 +11,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    background-color: #f3f2f6;
+
     &.error-404 {
         background-color: black;
         color: #FFF;
@@ -46,9 +48,6 @@ select,
 button {
     border: 0;
     outline: 0;
-    background: none;
-    text-decoration: none;
-    box-shadow: none;
     text-align: left;
 }
 

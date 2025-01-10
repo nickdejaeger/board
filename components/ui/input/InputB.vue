@@ -29,6 +29,7 @@ form {
     cursor: text;
 
     input {
+        background: none;
         line-height: 19px;
         width: 100%;
         padding: 0px 8px 1px 0px;

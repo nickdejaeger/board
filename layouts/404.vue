@@ -3,9 +3,11 @@ const title = ref('Error 404')
 </script>
 
 <template>
-  <AppHeader />
+    <AppHeader />
 
-  <main class="container">
-    <slot />
-  </main>
+    <main class="container">
+        <slot />
+    </main>
+
+    <AppFooter>Yolo</AppFooter>
 </template>

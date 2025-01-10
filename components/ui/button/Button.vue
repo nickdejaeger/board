@@ -1,8 +1,8 @@
 <template>
-  <button type="button" class="button">
-    <slot name="icon"></slot>
-    <slot>Default Button Text</slot>
-  </button>
+    <button type="button" class="button">
+        <slot name="icon"></slot>
+        <slot>Default Button Text</slot>
+    </button>
 </template>
 
 <style scoped lang="scss">
@@ -12,7 +12,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
-    background-color: rgba(140, 140, 140, 0.15);
+    background-color: #000;
+    color: #FFF;
     min-height: 2.5rem;
     border: 1px solid transparent;
     border-radius: .75rem;
@@ -21,7 +22,7 @@
     padding: 0.5rem 1rem;
 
     &:hover {
-      background-color: rgba(140, 140, 140, 0.25);
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
     &--primary,

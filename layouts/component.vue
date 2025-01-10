@@ -54,32 +54,34 @@ const elementLinks = ref([
 <template>
     <AppHeader />
 
-    <main>
-        <div class="flex flex-col">
-            <nav>
-                <h6>Components</h6>
-                <NuxtLink v-for="link in componentLinks" :key="link.path"
-                    :to="{ path: link.path }"
-                    :class="{ invalid: isInvalidLink(link.path) }"
-                >
-                    {{ link.name }}
-                </NuxtLink>
-            </nav>
-            <nav>
-                <h6>Elements</h6>
-                <NuxtLink v-for="link in elementLinks" :key="link.path"
-                    :to="{ path: link.path }"
-                    :class="{ invalid: isInvalidLink(link.path) }"
-                >
-                    {{ link.name }}
-                </NuxtLink>
-            </nav>
-        </div>
+    <Container>
+        <SidebarGrid>
+            <div class="flex flex-col">
+                <nav>
+                    <h6>Components</h6>
+                    <NuxtLink v-for="link in componentLinks" :key="link.path"
+                        :to="{ path: link.path }"
+                        :class="{ invalid: isInvalidLink(link.path) }"
+                    >
+                        {{ link.name }}
+                    </NuxtLink>
+                </nav>
+                <nav>
+                    <h6>Elements</h6>
+                    <NuxtLink v-for="link in elementLinks" :key="link.path"
+                        :to="{ path: link.path }"
+                        :class="{ invalid: isInvalidLink(link.path) }"
+                    >
+                        {{ link.name }}
+                    </NuxtLink>
+                </nav>
+            </div>
 
-        <section>
-            <slot />
-        </section>
-    </main>
+            <section>
+                <slot />
+            </section>
+        </SidebarGrid>
+    </Container>
     
     <AppFooter />
 </template>

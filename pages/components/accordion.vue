@@ -36,8 +36,19 @@ const accordionData = ref([{
 </script>
 
 <template>
-    <h1>Accordion</h1>
-    <div class="bg-black p-12">
-        <Accordion :items="accordionData" />
+    <div class="">
+        <div>
+            <h1>Accordion</h1>
+            <div class="bg-black p-12">
+                <Accordion :items="accordionData" />
+            </div>
+        </div>
     </div>
 </template>
+
+<style lang="scss">
+    div {
+        display: grid;
+
+    }
+</style>

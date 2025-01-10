@@ -37,7 +37,7 @@ export default defineNuxtConfig({
         redirect: false
     },
     components: [
-        { 
+        {
             path: '~/components',
             pathPrefix: false,
         }
@@ -47,11 +47,13 @@ export default defineNuxtConfig({
         
         }
     },
+    
     routeRules: {
         '/components': {
             redirect: '/components/accordion'
         }
     },
+    
     imports: {
         dirs: ['types/*ts']
     }

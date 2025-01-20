@@ -12,8 +12,8 @@
         flex: 1 1 0%;
         min-width: 4.5rem;
         font-family: "Roboto", serif;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: .85rem;
+        font-weight: 400;
         font-style: normal;
     }
 }

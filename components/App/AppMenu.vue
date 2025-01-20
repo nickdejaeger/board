@@ -12,6 +12,7 @@ function isInvalidLink(path: string): boolean {
 
 const componentLinks = ref([
     { path: '/components/accordion', name: 'Accordion' },
+    { path: '/components/anchor', name: 'Anchor' },
     //{ path: '/components/attachment', name: 'Attachment' },
     { path: '/components/badge', name: 'Badge' },
     { path: '/components/button', name: 'Button' },
@@ -30,6 +31,8 @@ const componentLinks = ref([
     //{ path: '/components/icon', name: 'Icon' },
     { path: '/components/input', name: 'Input' },
     //{ path: '/components/modal', name: 'Modal' },
+    { path: '/components/namecard', name: 'Namecard' },
+    { path: '/components/notch', name: 'Notch' },
     //{ path: '/components/radio', name: 'Radio' },
     { path: '/components/select', name: 'Select' },
     //{ path: '/components/separator', name: 'Separator' },

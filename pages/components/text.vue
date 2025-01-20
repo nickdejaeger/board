@@ -13,9 +13,9 @@ defineProps({
 
 <template>
     <h1>Divider</h1>
-    <DarkBox>
+    <Example title="Gradient Text" theme="dark">
         <TextGradient>Always at your command.</TextGradient>
-    </DarkBox>
+    </Example>
 </template>
 
 

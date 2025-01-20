@@ -17,7 +17,7 @@ const textareaContent2 = ref('Lorem ipsum dolor sit amet consectetur adipisicing
 <template>
     <h1>Input</h1>
 
-    <LightBox class="flex-col gap-6">
+    <Example>
         <Input />
         <Input label="Enter your name" placeholder="Name" value="Nick" />
         <Input type="email" label="Enter your email" placeholder="Email" />
@@ -30,9 +30,9 @@ const textareaContent2 = ref('Lorem ipsum dolor sit amet consectetur adipisicing
             label="Description"
         />
         <Textarea v-model="textareaContent2" />
-    </LightBox>
+    </Example>
 
-    <DarkBox>
+    <Example theme="dark">
         <InputB />
-    </DarkBox>
+    </Example>
 </template>

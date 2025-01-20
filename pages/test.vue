@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+    import accordion from '~/content/accordion.json';
+
     const { pending, data: posts } = await useFetch('/api/test', {
         transform: (response) => response.data,
         lazy: true
@@ -13,7 +15,6 @@
             this.age = age
         }
     }
-
     const me = new User('Nick', 30)
 </script>
 
@@ -23,7 +24,12 @@
 
     <ContentDoc />
 
-    <div>{{ me }}</div>
+    <article v-for="item in accordion.items" class="flex flex-col">
+        <h3><span>{{ item.id }}</span> {{ item.active }}) {{ item.title }}</h3>
+        <p class="text-">{{ item.content }}</p>
+    </article>
+
+    <pre>{{ me }}</pre>
 
     <div v-if="pending">Loading...</div>
     <div v-else>

@@ -51,11 +51,16 @@ const toggleItem = (index) => {
     font-family: "Roboto", serif;
     font-weight: 400;
     font-style: normal;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .35rem;
 
     &__item {
         position: relative;
-        border-bottom: 1px solid rgba(255,255,255,.15);
 
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0,0,0,.15);
+        }
+        
         &--open {
             .lui-accordion__icon {
                 transform: rotate(180deg);
@@ -92,14 +97,38 @@ const toggleItem = (index) => {
             font-size: 1.1rem;
             font-weight: 500;
             line-height: 1.8rem;
-            color: #FFF;
         }
 
         &:hover {
             &::after {
                 opacity: 1;
             }
+        }
+    }
 
+    &__icon {
+        transition: all .35s ease-in-out;
+        min-width: 1.25rem;
+    }
+
+    &__body {
+        font-size: 1rem;
+        padding: 0 1rem .5rem;
+        border-bottom: 1px solid transparent;
+    }
+}
+
+.lui-accordion--dark {
+    &__item {
+        border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    &__header {
+        h3 {
+            color: #FFF;
+        }
+
+        &:hover {
             .lui-accordion__icon {
                 color: rgba(255,255,255,1);
             }
@@ -108,15 +137,10 @@ const toggleItem = (index) => {
 
     &__icon {
         color: rgba(255,255,255,.65);
-        transition: all .35s ease-in-out;
-        min-width: 1.25rem;
     }
 
     &__body {
-        font-size: 1rem;
         color: rgba(255,255,255,.75);
-        padding: 0 1rem .5rem;
-        border-bottom: 1px solid transparent
     }
 }
 </style>

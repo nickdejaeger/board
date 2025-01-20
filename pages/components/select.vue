@@ -13,5 +13,7 @@ defineProps({
 
 <template>
     <h1>Select</h1>
-    <Select />
+    <Example>
+        <Select />
+    </Example>
 </template>

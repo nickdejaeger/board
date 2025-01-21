@@ -55,6 +55,7 @@ const elementLinks = ref([
 <template>
 
     <nav>
+        <NuxtLink to="/array">Array Functions</NuxtLink>
         <NuxtLink to="/store">Pinia</NuxtLink>
         <NuxtLink to="/test">Test</NuxtLink>
         <NuxtLink to="/supabase">Supabase</NuxtLink>

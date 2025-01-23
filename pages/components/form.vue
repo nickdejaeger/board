@@ -15,10 +15,12 @@ defineProps({
 
 <template>
     <h1>{{ title }}</h1>
-    
-    <div class="flex flex-col items-start">
-        <Form />
 
+    <Example>
+        <Form />
+    </Example>
+    
+    <Example>
         <Form2 />
-    </div>
+    </Example>
 </template>

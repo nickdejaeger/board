@@ -15,6 +15,7 @@ const componentLinks = ref([
     { path: '/components/anchor', name: 'Anchor' },
     //{ path: '/components/attachment', name: 'Attachment' },
     { path: '/components/badge', name: 'Badge' },
+    { path: '/components/burger', name: 'Burger' },
     { path: '/components/button', name: 'Button' },
     //{ path: '/components/breadcrumbs', name: 'Breadcrumbs' },
     //{ path: '/components/card', name: 'Card' },
@@ -36,7 +37,7 @@ const componentLinks = ref([
     //{ path: '/components/radio', name: 'Radio' },
     { path: '/components/select', name: 'Select' },
     //{ path: '/components/separator', name: 'Separator' },
-    //{ path: '/components/switch', name: 'Switch' },
+    { path: '/components/switch', name: 'Switch' },
     //{ path: '/components/tabs', name: 'Tabs' },
     { path: '/components/text', name: 'Text' },
     //{ path: '/components/textarea', name: 'Textarea' },
@@ -46,6 +47,7 @@ const componentLinks = ref([
 ])
 const elementLinks = ref([
     { path: '/elements/dropdown-menu', name: 'Dropdown Menu' },
+    { path: '/elements/image-slider', name: 'Image Slider' },
     //{ path: '/components/gallery', name: 'Gallery' },
     //{ path: '/components/navbar', name: 'Navbar' },
     //{ path: '/components/table', name: 'Table' },

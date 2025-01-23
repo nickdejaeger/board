@@ -13,12 +13,18 @@ defineProps({
 
 <template>
     <h1>Divider</h1>
-    <div class="flex flex-col gap-6">
+    <Example>
         <Divider></Divider>
+    </Example>
+    <Example>
         <Divider class="is-dimmed is-dashed"></Divider>
+    </Example>
+    <Example>
         <Divider class="divider--center">Label</Divider>
+    </Example>
+    <Example>
         <Divider></Divider>
-    </div>
+    </Example>
 </template>
 
 

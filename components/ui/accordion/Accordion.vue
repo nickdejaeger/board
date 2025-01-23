@@ -14,18 +14,24 @@ const props = defineProps({
     active: {
         type: Boolean,
         default: false
+    },
+    class: {
+        type: String,
+        default: ''
     }
-})
+});
 
-const expandedItems = ref(props.items.map(() => false))
+const expandedItems = ref(props.items.map(() => false));
 
 const toggleItem = (index) => {
-  expandedItems.value[index] = !expandedItems.value[index]
+  expandedItems.value[index] = !expandedItems.value[index];
 }
+
+const classes = 'lui-accordion ' + props.class;
 </script>
 
 <template>
-    <div class="lui-accordion" :id="id">
+    <div :class="classes" :id="id">
         <button type="button" 
             class="lui-accordion__item" 
             v-for="(item, index) in items" 
@@ -119,28 +125,30 @@ const toggleItem = (index) => {
 }
 
 .lui-accordion--dark {
-    &__item {
-        border-bottom: 1px solid rgba(255,255,255,.15);
-    }
-
-    &__header {
-        h3 {
-            color: #FFF;
+    .lui-accordion {
+        &__item {
+            border-bottom: 1px solid rgba(255,255,255,.15);
         }
 
-        &:hover {
-            .lui-accordion__icon {
-                color: rgba(255,255,255,1);
+        &__header {
+            h3 {
+                color: #FFF;
+            }
+
+            &:hover {
+                .lui-accordion__icon {
+                    color: rgba(255,255,255,1);
+                }
             }
         }
-    }
 
-    &__icon {
-        color: rgba(255,255,255,.65);
-    }
+        &__icon {
+            color: rgba(255,255,255,.65);
+        }
 
-    &__body {
-        color: rgba(255,255,255,.75);
+        &__body {
+            color: rgba(255,255,255,.75);
+        }
     }
 }
 </style>

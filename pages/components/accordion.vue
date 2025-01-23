@@ -12,4 +12,8 @@ const items = accordionData.items;
     <Example>
         <Accordion :items="items" />
     </Example>
+
+    <Example theme="dark">
+        <Accordion :items="items" class="lui-accordion--dark" />
+    </Example>
 </template>

@@ -1,3 +1,69 @@
+:root {
+    --bg: #000;
+    --accent: #f2f3f4;
+    --accent-text: #000;
+    --accent-titles: #000;
+    --text: #fff;
+    --text-light: #979893;
+    --titles: #fff;
+    --primary: #5f6159;
+    --primary-text: #ffffff;
+    --primary-titles: #ffffff;
+    --secondary: #101113;
+    --secondary-text: #FFF;
+    --secondary-titles: #FFF;
+    --button: #5f6159;
+    --button-text: #ffffff;
+    --button-state: #30312c;
+    --button-state-text: #ffffff;
+    --button-underline: rgba(255, 255, 255, 0.3);
+    --button-underline-state: #FFF;
+    --button-sec: #000;
+    --button-sec-text: #000;
+    --button-sec-state: #000;
+    --button-sec-state-text: #fff;
+    --links: #fff;
+    --links-state: #fff;
+    --input-border: #fff;
+    --input-border-invalid: #800500;
+    --input-border-focus: var(--primary);
+}
+
+::selection {
+    background: var(--primary);
+    color: var(--primary-text);
+}
+
+.primary-theme {
+    background: var(--primary);
+    --text: var(--primary-text);
+    color: var(--text);
+    --titles: var(--primary-titles);
+    --titles: var(--primary-titles);
+    --links: var(--primary-titles);
+    --links-state: var(--primary-titles);
+    --button-text: var(--primary-titles);
+    --button-underline: rgba(0, 0, 0, 0.3);
+    --button-underline-state: var(--primary-titles);
+}
+
+.secondary-theme {
+    background: var(--secondary);
+    --text: var(--secondary-text);
+    color: var(--text);
+    --titles: var(--secondary-titles);
+    --links: var(--secondary-titles);
+    --button-underline: rgba(255, 255, 255, 0.3);
+    --button-underline-state: var(--secondary-titles);
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn, .btn:visited, input[type=submit] {
+    display: inline-flex;
+}
+
 .container {
   max-width: 80rem;
   padding-left: 2rem;

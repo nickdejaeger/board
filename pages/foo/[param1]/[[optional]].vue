@@ -6,4 +6,5 @@
 
 <template>
     <PageHeader>foo/{{ par1 }}/{{ par2 }}</PageHeader>
+    <div>{{ route.params }}</div>
 </template>

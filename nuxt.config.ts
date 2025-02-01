@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
     devtools: { enabled: false },
@@ -15,6 +17,9 @@ export default defineNuxtConfig({
         //pageTransition: { name: 'page', mode: 'out-in' }
     },
     vite: {
+        plugins: [
+            tailwindcss(),
+        ],
         css: {
             preprocessorOptions: {
                 scss: {
@@ -25,6 +30,7 @@ export default defineNuxtConfig({
         }
     },
     css: [
+        '~/assets/css/main.css',
         '~/assets/css/global.css',
         '~/assets/scss/global.scss',
         '~/assets/scss/global-classes.scss',
@@ -33,7 +39,6 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/supabase',
         '@pinia/nuxt',
-        '@nuxtjs/tailwindcss',
         '@nuxt/content'
     ],
     supabase: {
@@ -47,18 +52,7 @@ export default defineNuxtConfig({
             pathPrefix: false,
         }
     ],
-    router: {
-        options: {
-        
-        }
-    },
-    
-    routeRules: {
-        '/components': {
-            redirect: '/components/accordion'
-        }
-    },
-    
+
     imports: {
         dirs: ['types/*ts']
     }

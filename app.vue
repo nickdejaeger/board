@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-    title: 'My Amazing Site',
+    title: 'Board',
     ogTitle: 'My Amazing Site',
     description: 'This is my amazing site, let me tell you all about it.',
     ogDescription: 'This is my amazing site, let me tell you all about it.',

@@ -57,12 +57,25 @@ const elementLinks = ref([
 <template>
 
     <nav>
-        <NuxtLink to="/array">Array Functions</NuxtLink>
-        <NuxtLink to="/store">Pinia</NuxtLink>
-        <NuxtLink to="/test">Test</NuxtLink>
-        <NuxtLink to="/supabase">Supabase</NuxtLink>
-        <NuxtLink to="/posts/2?example=true">Post 2</NuxtLink>
-        <NuxtLink to="/foo/bar/epic">foo/bar/epic</NuxtLink>
+        <ul>
+            <li><NuxtLink to="/array">Array Functions</NuxtLink></li>
+            <li><NuxtLink to="/store">Pinia</NuxtLink></li>
+            <li><NuxtLink to="/test">Test</NuxtLink></li>
+            <li><NuxtLink to="/supabase">Supabase</NuxtLink></li>
+            <li><NuxtLink to="/posts/2?example=true">Post 2</NuxtLink></li>
+            <li><NuxtLink to="/foo/bar/epic">foo/bar/epic</NuxtLink></li>
+        </ul>    
+    </nav>
+
+    <nav>
+        <h6>WP Fetch</h6>
+        <ul>
+            <li><NuxtLink to="/wpfetch">Berichten</NuxtLink> </li>
+            <ul>
+                <li><NuxtLink to="/wpfetch/514">Bericht 514</NuxtLink></li>
+                <li><NuxtLink to="/wpfetch/513">Bericht 513</NuxtLink></li>
+            </ul>
+        </ul>    
     </nav>
 
     <nav>
@@ -100,7 +113,19 @@ nav {
         line-height: 1.2;
     }
 
+    ul {
+        ul {
+            padding: 0 0 0 1.5rem;
+
+            a {
+                font-size: 0.85rem;
+                padding: .25rem .5rem .25rem 1rem;
+            }
+        }
+    }
+
     a {
+        display: block;
         position: relative;
         opacity: .65;
         font-size: 1.1rem;
